@@ -10,6 +10,9 @@
     body {
         background-color: #e4b453;
     }
+    #table1 {
+            margin-left: 70px ;
+        }
     </style>
 <body>
     <form name="signinform" method="get" action="signinform.html">
@@ -24,9 +27,12 @@
                 <td><input type="date" name="date"></td>
             </Tr>
             <tr>
-                <td style="color: blue; ">Giới tính</td>
-                <td><input type="radio" name="gender"><span>Nam</span></td>
-                <td><input type="radio" name="gender"><span>Nữ</span></td>
+                <td><label>Giới tính</label></td>
+                <td><input type="radio" name="gender" id="gender" value="nam">
+                <label for="gender" style="color: black;">Nam</label>
+                <input type="radio" name="gender" id="gender" value="nu">
+                <label for="gender" style="color: black;">Nữ</label>
+                </td>
             </tr>
             <tr>
                 <td style="color: blue; vertical-align: top;">Địa chỉ</td>
@@ -49,9 +55,12 @@
                 <td><input type="phone"></td>
             </tr>
             <tr>
-                <td></td>
-                <td><button type="submit" name="btsubmit" value="Đăng ký">Đăng ký</button></td>
-                <td><button type="reset">Nhập lại</button></td>
+                <table id="table1">
+                    <tr>
+                        <td><button type="submit" name="submit" value="Đăng ký" id="2">Đăng ký</button></td>
+                        <td><button type="reset" name="reset" value="Nhập lại" id="3">Nhập lại</button></td>
+                    </tr>
+                </table>
             </tr>
         </table>  
     </form>             
